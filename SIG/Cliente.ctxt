@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Cliente
+comment0.text=\n\ Representa\ un\ cliente.\ Contiene\ todos\ los\ datos\ relacionados\ con\ el\ cliente.\ Contiene\ el\ historial\ de\ acciones\ relacionadas\ con\n\ el\ cliente.\ \n\ \n\ @author\ Ivan\ Adrio\ Mu\u00F1iz\ \n\ @version\ 2018.04.19\n
+comment1.params=identificacion\ nombre\ apellidos\ correoElectronico\ telefono\ idEmpleado\ formatoFecha
+comment1.target=Cliente(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.text.SimpleDateFormat)
+comment1.text=\n\ Crea\ un\ objeto\ tipo\ cliente\ e\ introduce\ los\ datos\ \n\ @param\ identificacion\ DNI\ del\ cliente\n\ @param\ nombre\ nombre\ del\ cliente\n\ @param\ apellidos\ apellidos\ del\ cliente\n\ @param\ correoElectronico\ correo\ electr\u00F3nico\ de\ contacto\ del\ cliente\n\ @param\ telefono\ tel\u00E9fono\ de\ contacto\ del\ cliente\n\ @param\ idEmpleado\ DNI\ del\ empleado\ que\ da\ de\ alta\ la\ ficha\n\ @param\ formatoFecha\ formato\ empleado\ para\ la\ fecha\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\n\ Imprime\ los\ detalles\ de\ cada\ persona\n\ @return\ detalles\ del\ cliente\n
+comment3.params=
+comment3.target=java.util.ArrayList\ getHistorial()
+comment3.text=\n\ Devuelve\ el\ historial\ de\ acciones\ del\ cliente\ en\ una\ lista\n\ @return\ lista\ de\ acciones\ realizadas\ con\ el\ cliente\n
+comment4.params=
+comment4.target=java.util.ArrayList\ getHistorialString()
+comment4.text=\n\ Devuelve\ una\ lista\ en\ la\ que\ cada\ linea\ es\ la\ descripci\u00F3n\ de\ una\ accion\n\ @return\ historial\ de\ acciones\n
+comment5.params=descripcion\ idEmpleado
+comment5.target=void\ setAccion(java.lang.String,\ java.lang.String)
+comment5.text=\n\ A\u00F1ade\ una\ accion\ al\ historial\ de\ acciones\ del\ cliente\ \n\ @param\ descripcion\ descripcion\ de\ la\ accion\n\ @param\ idEmpleado\ DNI\ del\ empleado\ que\ realiza\ la\ acci\u00F3n\n
+comment6.params=nombre\ apellidos\ correoElectronico\ telefono\ empleadoActual
+comment6.target=void\ modificarPersona(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment6.text=\n\ Modifica\ los\ datos\ de\ un\ cliente\n\ @param\ identificacion\ DNI\ del\ cliente\n\ @param\ nombre\ nombre\ del\ cliente\n\ @param\ apellidos\ apellidos\ del\ cliente\n\ @param\ correoElectr\u00F3nico\ correo\ electronico\ del\ cliente\n\ @param\ telefono\ telefono\ del\ cliente\n\ @param\ empleadoActual\ DNI\ del\ empleado\ que\ modifica\ al\ cliente\n
+numComments=7

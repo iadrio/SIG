@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Lector
+comment0.text=\r\n\ Esta\ clase\ se\ encarga\ de\ leer\ las\ instrucciones\ que\ el\ usuario\ introduce\ en\ pantalla\ \r\n\ Incluye\ m\u00E9todos\ para\ leer\ enteros,\ strings\ y\ n\u00FAmeros\ reales\ (Estos\ pueden\ ser\ devueltos\ como\ entero\ o\ como\ strings\ en\ funci\u00F3n\ del\ \r\n\ m\u00E9todo\ elegido).\r\n\ \r\n\ @author\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\ \r\n\ @version\ 2018.04.17\r\n
+comment1.params=
+comment1.target=Lector()
+comment1.text=\r\n\ Crea\ el\ objeto\ lector,\ el\ cual\ leera\ los\ datos\ de\ la\ pantalla.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getPalabra()
+comment2.text=\r\n\ Lee\ una\ instruccion\ en\ pantalla\ y\ la\ devuelve\ en\ forma\ de\ string\ de\ min\u00FAsculas.\r\n\ @return\ \ Devuelve\ un\ string\ de\ min\u00FAsculas\ \r\n
+comment3.params=
+comment3.target=int\ getEntero()
+comment3.text=\r\n\ Lee\ una\ instrucci\u00F3n\ en\ pantalla\ y\ la\ convierte\ en\ n\u00FAmero\ entero.\ Si\ la\ lectura\ no\ es\ parseable\ a\ entero\ solicita\ que\ se\ introduzca\r\n\ otra\ instrucci\u00F3n\ de\ nuevo.\r\n\ @return\ \ Devuelve\ el\ n\u00FAmero\ entero\ introducido\r\n
+comment4.params=
+comment4.target=java.lang.String\ getDoubleComoString()
+comment4.text=\r\n\ Lee\ una\ instruccion\ en\ pantalla\ y\ comprueba\ si\ esta\ es\ parseable\ a\ un\ n\u00FAmero\ real.Lee\ una\ instruccion\ en\ pantalla\ y\ comprueba\ \r\n\ si\ esta\ es\ parseable\ a\ un\ n\u00FAmero\ real.\ Si\ no\ lo\ es,\ solicita\ que\ se\ introduzca\ una\ nueva\ instrucci\u00F3n.\r\n\ @return\ \ Devuelve\ un\ string\ que\ se\ puede\ parsear\ a\ n\u00FAmero\ real.\r\n
+comment5.params=
+comment5.target=double\ getReal()
+comment5.text=\r\n\ Lee\ una\ instruccion\ en\ pantalla\ y\ comprueba\ si\ esta\ es\ parseable\ a\ un\ n\u00FAmero\ real.\ Si\ no\ lo\ es,\ solicita\ que\ se\ introduzca\ una\ \r\n\ nueva\ instrucci\u00F3n.\r\n\ @return\ \ Devuelve\ la\ lectura\ convertida\ en\ un\ n\u00FAmero\ real.\r\n
+comment6.params=
+comment6.target=boolean\ pedirConfirmacion()
+comment6.text=\r\n\ Imprime\ un\ mensaje\ en\ pantalla\ solicitando\ una\ confirmaci\u00F3n.\ Devuelve\ true\ o\ false\ en\ funci\u00F3n\ de\ si\ el\ usuario\ acepta\ o\ no.\r\n\ @return\ Devuelve\ true\ o\ false\ en\ funci\u00F3n\ de\ si\ el\ usuario\ acepta\ o\ no.\r\n
+numComments=7

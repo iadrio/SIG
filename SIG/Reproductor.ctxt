@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Reproductor
+comment0.text=\r\n\ Define\ las\ caracter\u00EDsticas\ de\ un\ objeto\ de\ tipo\ reproductor\r\n\ \r\n\ @author\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\ \r\n\ @version\ 2018.04.21\r\n
+comment1.params=codigoDeProducto\ marca\ modelo\ color\ precio\ cantidad\ formato
+comment1.target=Reproductor(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ double,\ int,\ java.lang.String)
+comment1.text=\r\n\ Crea\ productos\ tipo\ reproductor\r\n\ @param\ codigoDeProducto\ n\u00FAmero\ de\ identificaci\u00F3n\ del\ producto\r\n\ @param\ marca\ fabricante\ del\ producto\r\n\ @param\ modelo\ \ \r\n\ @param\ color\r\n\ @param\ precio\r\n\ @param\ cantidad\ cantidad\ de\ productos\ en\ el\ almacen\r\n\ @param\ formato\ formatos\ reproducibles\ \r\n
+comment2.params=
+comment2.target=java.lang.String\ getFormato()
+comment2.text=\r\n\ Indica\ el\ formato\ de\ soporte\ admitido\ por\ el\ reproductor\r\n\ @return\ \ formato\ de\ soporte\ admitido\ por\ el\ reproductor\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ Ofrece\ una\ breve\ descripci\u00F3n\ del\ producto\r\n\ @return\ descripci\u00F3n\ del\ producto\r\n
+numComments=4

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=CorreoElectronico
+comment0.text=\n\ Almacena\ datos\ de\ un\ contacto\ con\ el\ cliente\n\ \n\ @author\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\ \n\ @version\ 24.04.2018\n
+comment1.params=idCliente\ idEmpleado\ fecha\ contenido\ promocion\ numeroCorreo
+comment1.target=CorreoElectronico(java.lang.String,\ java.lang.String,\ java.util.Date,\ java.util.ArrayList,\ int,\ int)
+comment1.text=\n\ Crea\ un\ correo\ electr\u00F3nico\ \n\ @param\ idCliente\ identificaci\u00F3n\ del\ cliente\n\ @param\ idEmpleado\ identificaci\u00F3n\ del\ empleado\n\ @param\ fecha\ fecha\ de\ envio\n\ @param\ contenido\ cuerpo\ del\ correo\n
+comment2.params=
+comment2.target=int\ getPromocion()
+comment2.text=\n\ Indica\ a\ que\ promoci\u00F3n\ est\u00E1\ asociado\ el\ correo\n\ return\ n\u00FAmero\ de\ promocion\n
+comment3.params=
+comment3.target=java.util.ArrayList\ getContenido()
+comment3.text=\n\ Devuelve\ el\ contenido\ del\ correo\n\ return\ Devuelve\ el\ contenido\ del\ correo\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\n\ Describe\ el\ correo\ electronico\n\ @return\ resumen\ del\ correo\n
+numComments=5

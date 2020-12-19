@@ -1,0 +1,64 @@
+import java.io.*;
+import java.util.*;
+/**
+ * Write a description of class FichaReparacion here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class FichaReparacion extends Documentos
+{
+    // instance variables - replace the example below with your own
+    private String[] pieza;
+    private String idProducto;
+    //(idPieza,descripcion pieza, precio, proveedor,cantidad, estado)
+    private HashSet<String[]> listaPiezas; 
+    private ArrayList<String> comentarios;
+    private int presupuesto;
+    
+    /**
+     * Constructor for objects of class FichaReparacion
+     */
+    public FichaReparacion(String idProducto,String idTecnico,int numeroFichaDeCompra,String idCliente,int numeroFicha,Date fecha)
+    {
+        super(idCliente,idTecnico,fecha);
+        comentarios = new ArrayList<String>();
+        listaPiezas = new HashSet<String[]>();
+        this.idProducto=idProducto;
+    }
+
+    public ArrayList<String> getComentarios()
+    {
+        return comentarios;
+    }
+    
+    public HashSet<String[]> getListaPiezas()
+    {
+        return listaPiezas;
+    }
+    
+    public void quitarPieza(String[] pieza)
+    {
+        listaPiezas.remove(pieza);
+    }    
+    
+    public void añadirComentario(String comentario)
+    {
+        comentarios.add(comentario);
+    }
+    
+    public void añadirPieza(String idPieza,String descripcion, String precio, String proveedor,String cantidad, String estado)
+    {
+        String[] pieza = {idPieza,descripcion,precio,proveedor,cantidad,estado};
+        listaPiezas.add(pieza);
+    }
+    
+    public String[] pieza getPieza(String idPieza)
+    {
+
+    
+    public String getIdProducto()
+    {
+        return idProducto;
+    }
+}

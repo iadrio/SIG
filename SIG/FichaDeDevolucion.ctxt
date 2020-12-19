@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=FichaDeDevolucion
+comment0.text=\n\ Almacena\ datos\ relacionados\ con\ una\ devoluci\u00F3n\n\ \n\ @author\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\ \n\ @version\ 2018.04.21\n
+comment1.params=idCliente\ idEmpleado\ fecha\ numeroDeFicha\ numeroFichaDeCompra\ motivo
+comment1.target=FichaDeDevolucion(java.lang.String,\ java.lang.String,\ java.util.Date,\ int,\ int,\ java.lang.String)
+comment1.text=\n\ Crea\ una\ ficha\ de\ devoluci\u00F3n\n\ @param\ idCliente\ DNI\ del\ cliente\n\ @param\ idEmpleado\ DNI\ del\ empleado\ que\ tramita\ la\ devoluci\u00F3n\n\ @param\ fecha\ fecha\ de\ la\ devoluci\u00F3n\n\ @param\ numeroDeFicha\ numero\ de\ ficha\ de\ devoluci\u00F3n\n\ @param\ numeroFichaDeCompra\ numero\ de\ ficha\ de\ compra\n\ @param\ motivo\ raz\u00F3n\ de\ la\ devoluci\u00F3n\n
+comment2.params=
+comment2.target=int\ getNumeroFichaDeCompra()
+comment2.text=\n\ Nos\ indica\ el\ n\u00FAmero\ de\ la\ ficha\n\ @return\ numero\ de\ la\ ficha\ de\ devoluci\u00F3n\n
+comment3.params=
+comment3.target=java.lang.String\ getMotivo()
+comment3.text=\n\ Nos\ indica\ los\ motivos\ de\ la\ devoluci\u00F3n\n\ @return\ motivo\ de\ la\ devoluci\u00F3n\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\n\ Ofrece\ una\ breve\ descripci\u00F3n\ del\ documento\n\ @return\ descripci\u00F3n\ del\ documento\n
+numComments=5

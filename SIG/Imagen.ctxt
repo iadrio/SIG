@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Imagen
+comment0.text=\r\n\ Clase\ abstracta\ que\ define\ las\ caracter\u00EDsticas\ de\ un\ producto\ de\ la\ secci\u00F3n\ de\ imagen\r\n\ \r\n\ @author\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\ \r\n\ @version\ 2018.04.21\r\n
+comment1.params=codigoDeProducto\ marca\ modelo\ color\ precio\ cantidad
+comment1.target=Imagen(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ double,\ int)
+comment1.text=\r\n\ Crea\ un\ producto\ de\ la\ seccion\ imagen\r\n\ @param\ codigoDeProducto\ n\u00FAmero\ de\ identificaci\u00F3n\ del\ producto\r\n\ @param\ marca\ fabricante\ del\ producto\r\n\ @param\ modelo\ \ \r\n\ @param\ color\r\n\ @param\ precio\r\n\ @param\ cantidad\ cantidad\ de\ productos\ en\ el\ almacen\r\n
+numComments=2

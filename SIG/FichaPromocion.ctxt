@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=FichaPromocion
+comment0.text=\n\ Almacena\ datos\ relacionados\ con\ una\ promoci\u00F3n\n\ \n\ @author\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\ \n\ @version\ 24.04.2018\n
+comment1.params=idComercial\ fecha\ numeroFicha\ nombre\ descripcion
+comment1.target=FichaPromocion(java.lang.String,\ java.util.Date,\ int,\ java.lang.String,\ java.lang.String)
+comment1.text=\n\ Crea\ una\ ficha\ de\ promoci\u00F3n.\n\ @param\ idEmpleado\ DNI\ del\ empleado\ que\ realiza\ la\ venta\n\ @param\ fecha\ fecha\ de\ compra\n\ @param\ numeroDeFicha\ n\u00FAmero\ de\ ficha\ de\ promoci\u00F3n\n
+comment2.params=
+comment2.target=void\ activar()
+comment2.text=\n\ Activa\ una\ promoci\u00F3n\n
+comment3.params=
+comment3.target=void\ desactivar()
+comment3.text=\n\ Desactiva\ una\ promoci\u00F3n\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\n\ Ofrece\ una\ descripcion\ breve\ de\ la\ promoci\u00F3n\n\ @return\ resumen\ de\ la\ promocion\n
+comment5.params=
+comment5.target=boolean\ getActivada()
+comment5.text=\n\ Comprueba\ si\ una\ promoci\u00F3n\ est\u00E1\ activada\n\ @return\ true\ si\ la\ promoci\u00F3n\ est\u00E1\ activada\n
+comment6.params=
+comment6.target=java.lang.String\ getNombre()
+comment6.text=\n\ Consulta\ el\ nombre\ de\ una\ promoci\u00F3n\n\ @return\ devuelve\ el\ nombre\ de\ la\ promoci\u00F3n\n
+comment7.params=
+comment7.target=java.lang.String\ getDescripcion()
+comment7.text=\n\ Consulta\ la\ descripci\u00F3n\ de\ la\ promoci\u00F3n\n\ @return\ devuelve\ la\ descripci\u00F3n\ de\ la\ promoci\u00F3n\n
+numComments=8

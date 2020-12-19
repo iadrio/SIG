@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FichaDeFinanciacion
+comment0.text=\n\ Almacena\ datos\ relacionados\ con\ una\ financiaci\u00F3n\n\ \n\ @author\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\ \n\ @version\ 2018.04.21\n
+comment1.params=idCliente\ idEmpleado\ fecha\ numeroDeFicha\ ultimaNomina\ plazos\ estado\ idFichaDeCompra
+comment1.target=FichaDeFinanciacion(java.lang.String,\ java.lang.String,\ java.util.Date,\ int,\ double,\ int,\ java.lang.String,\ int)
+comment1.text=\n\ Crea\ una\ ficha\ de\ financiaci\u00F3n\n\ @param\ idCliente\ DNI\ del\ cliente\n\ @param\ idEmpleado\ DNI\ del\ empleado\ que\ tramita\ la\ financiaci\u00F3n\n\ @param\ fecha\ fecha\ de\ la\ financiaci\u00F3n\n\ @param\ numeroDeFicha\ numero\ de\ ficha\ de\ financiaci\u00F3n\n\ @param\ ultimaNomina\ \u00FAltimo\ sueldo\ mensual\ del\ cliente\n\ @param\ plazos\ plazos\ en\ los\ que\ el\ cliente\ quiere\ financiar\ la\ compra\n\ @param\ estado\ estado\ del\ tramite\n\ @param\ idFichaDeCompra\ n\u00FAmero\ de\ ficha\ de\ compra\n
+comment2.params=
+comment2.target=int\ getIdFichaDeCompra()
+comment2.text=\n\ Consulta\ n\u00FAmero\ de\ ficha\ de\ compra\ asociado\ a\ la\ financiaci\u00F3n\n\ @return\ n\u00FAmero\ de\ ficha\ de\ compra\ asociado\ a\ la\ financiaci\u00F3n\n
+comment3.params=
+comment3.target=double\ getUltimaNomina()
+comment3.text=\n\ Consulta\ el\ valor\ de\ la\ \u00FAltima\ n\u00F3mina\ mensual\ del\ cliente\n\ @return\ valor\ de\ la\ \u00FAltima\ n\u00F3mina\ mensual\ del\ cliente\n
+comment4.params=
+comment4.target=int\ getPlazos()
+comment4.text=\n\ Indica\ el\ n\u00FAmero\ de\ plazos\ en\ los\ que\ se\ desea\ financiar\ la\ compra\n\ @return\ n\u00FAmero\ de\ plazos\ en\ los\ que\ se\ desea\ financiar\ la\ compra\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\n\ Ofrece\ una\ breve\ descripci\u00F3n\ del\ documento\n\ @return\ descripci\u00F3n\ del\ documento\n
+numComments=6

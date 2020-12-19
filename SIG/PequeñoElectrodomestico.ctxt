@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Peque\u00F1oElectrodomestico
+comment0.text=\r\n\ Define\ las\ caracter\u00EDsticas\ de\ un\ electrodom\u00E9stico\ peque\u00F1o\r\n\ \r\n\ @author\:\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\r\n\ Date\:\ 22.04.2018\r\n
+comment1.params=codigoDeProducto\ marca\ modelo\ color\ precio\ cantidad\ tipo\ descripcion
+comment1.target=Peque\u00F1oElectrodomestico(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ double,\ int,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Crea\ un\ producto\ de\ la\ seccion\ peque\u00F1o\ electrodomestico\r\n\ @param\ codigoDeProducto\ n\u00FAmero\ de\ identificaci\u00F3n\ del\ producto\r\n\ @param\ marca\ fabricante\ del\ producto\r\n\ @param\ modelo\ \ \r\n\ @param\ color\r\n\ @param\ precio\r\n\ @param\ cantidad\ cantidad\ de\ productos\ en\ el\ almacen\r\n\ @param\ tipo\ tipo\ de\ electrodomestico\r\n\ @param\ descripcion\ descripcion\ del\ producto\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Ofrece\ una\ breve\ descripci\u00F3n\ del\ producto\r\n\ @return\ descripci\u00F3n\ del\ producto\r\n
+numComments=3

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Tienda
+comment0.text=\r\n\ Clase\ principal\ del\ programa.\ Solo\ contiene\ el\ m\u00E9todo\ main\ que\ se\ encarga\ de\ iniciar\ todo.\r\n\ \r\n\ @author\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\ \r\n\ @version\ 2018.04.17\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Instancia\ una\ clase\ interfaz\ la\ inicia.\r\n
+numComments=2

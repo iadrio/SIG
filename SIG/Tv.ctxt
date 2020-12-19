@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Tv
+comment0.text=\r\n\ Define\ las\ caracter\u00EDsticas\ de\ un\ objeto\ de\ tipo\ televisi\u00F3n\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=codigoDeProducto\ marca\ modelo\ color\ precio\ cantidad\ tama\u00F1o\ frecuencia\ resolucion
+comment1.target=Tv(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ double,\ int,\ int,\ int,\ java.lang.String)
+comment1.text=\r\n\ Crea\ productos\ tipo\ televisi\u00F3n\r\n\ @param\ codigoDeProducto\ n\u00FAmero\ de\ identificaci\u00F3n\ del\ producto\r\n\ @param\ marca\ fabricante\ del\ producto\r\n\ @param\ modelo\ \ \r\n\ @param\ color\r\n\ @param\ precio\r\n\ @param\ cantidad\ cantidad\ de\ productos\ en\ el\ almacen\r\n\ @param\ tama\u00F1o\ tama\u00F1o\ de\ pantalla\r\n\ @param\ frecuencia\ frecuencia\ de\ refresco\r\n\ @param\ resolucion\ resoluci\u00F3n\ de\ pantalla\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Devuelve\ un\ string\ con\ las\ caracter\u00EDsticas\ del\ producto\r\n\ @return\ \ \ \ caracter\u00EDsticas\ del\ producto\r\n
+numComments=3

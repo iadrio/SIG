@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Camara
+comment0.text=\r\n\ Define\ objetos\ tipo\ camara.\ Pueden\ ser\ camaras\ fotograficas,\ de\ video\ o\ ambas.\r\n\ \r\n\ @author\ Ivan\ Adrio\ Mu\u00F1iz\ \r\n\ @version\ 2018.04.22\r\n
+comment1.params=codigoDeProducto\ marca\ modelo\ color\ precio\ cantidad\ resolucionVideo\ pixeles
+comment1.target=Camara(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ double,\ int,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Crea\ productos\ tipo\ camara\r\n\ @param\ codigoDeProducto\ n\u00FAmero\ de\ identificaci\u00F3n\ del\ producto\r\n\ @param\ marca\ fabricante\ del\ producto\r\n\ @param\ modelo\ \ \r\n\ @param\ color\r\n\ @param\ precio\r\n\ @param\ cantidad\ cantidad\ de\ productos\ en\ el\ almacen\r\n\ @param\ resolucionVideo\ resolucion\ de\ video\ que\ es\ capaz\ de\ grabar\ la\ camara\r\n\ @param\ pixeles\ resoluci\u00F3n\ de\ la\ camara\ fotogr\u00E1fica\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Ofrece\ una\ desripci\u00F3n\ del\ producto\r\n\ @return\ descripci\u00F3n\ del\ producto\r\n
+numComments=3

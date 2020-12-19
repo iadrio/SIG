@@ -1,0 +1,241 @@
+import java.util.*;
+/**
+ * Write a description of class Caja here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Caja
+{
+    // instance variables - replace the example below with your own
+    private HashMap<Integer,FichaDeCompra> historialVentas;
+    private Usuarios listaUsuarios;
+    private Almacen almacen;
+    private Date date;
+    private int numeroDeFicha;
+
+
+
+    /**
+     * Constructor for objects of class Caja
+     */
+    public Caja(Usuarios listaUsuarios, Almacen almacen)
+    {
+       historialVentas = new HashMap<Integer,FichaDeCompra>();
+       this.listaUsuarios = listaUsuarios;
+       this.almacen = almacen;
+       numeroDeFicha = 1;
+       date = new Date();
+       
+    }
+
+    public void vender()
+    {
+        String fecha = date.toString();
+        String dni;
+        System.out.println("Introduzca el DNI del cliente");
+        dni=Lector.getPalabra();
+        if(listaUsuarios.getCliente(dni)==null)
+        {
+            System.out.println("El cliente no existe.Para continuar es necesario abrir una ficha de cliente");
+            if(Lector.pedirConfirmacion())
+            {
+                //listaUsuarios.añadirCliente();
+                if(listaUsuarios.getExisteCliente(dni))
+                {
+                    FichaDeCompra fichaDeCompra = crearFichaDeCompra(dni,fecha,numeroDeFicha);
+                    setPagar(fichaDeCompra);
+                }
+                else
+                {
+                    System.out.println("Venta abortada. El cliente no es valido");
+                    return;
+                }
+                
+            }
+            else
+            {
+                System.out.println("Venta abortada");
+                return;
+            }
+        }
+        else
+        {
+            listaUsuarios.getCliente(dni).getDescripcion();
+            FichaDeCompra fichaDeCompra = crearFichaDeCompra(dni,fecha,numeroDeFicha);
+            setPagar(fichaDeCompra);
+        }
+    }
+    
+    
+    public FichaDeCompra crearFichaDeCompra(String dni,String fecha,int numeroDeFicha)
+    {
+        boolean seguir = true;
+        
+        FichaDeCompra fichaDeCompra = new FichaDeCompra(listaUsuarios.getCliente(dni).getIdentificacion(),listaUsuarios.getEmpleadoActual().getIdentificacion(),fecha,numeroDeFicha);
+        
+        while(seguir)
+        {
+        System.out.println("Teclee el codigo del siguiente producto");
+        String idProducto = Lector.getPalabra();        
+        System.out.println("¿Cuantos articulos de este tipo desa añadir?");
+        int cantidad = Lector.getEntero();
+        if(almacen.getExiste(idProducto))
+        {
+            if(almacen.comprobarStockSuficiente(idProducto,cantidad))
+            {
+                fichaDeCompra.añadirProducto(idProducto,cantidad);
+                almacen.setQuitaArticulos(idProducto,cantidad);
+                double precio = almacen.getProductoPorCp(idProducto).getPrecio()*cantidad;
+                fichaDeCompra.setTotal(precio);
+                imprimeFicha(fichaDeCompra);
+                System.out.println("Desea añadir mas productos? Pulsa 'enter' para añadir otro producto, escribe 'pagar' para finalizar la compra");
+                String confirmacion = Lector.getPalabra();
+                if(confirmacion.equals("pagar")){seguir=false;}
+            }
+            else
+            {
+                System.out.println("No hay suficientes unidades disponibles.");
+                System.out.println("¿Desea comprar otro producto o intentarlo con una cantidad mas baja?. Pulse enter si quiere seguir con la compra o escriba salir para terminarla");
+                String confirmacion = Lector.getPalabra();
+                if(confirmacion.equals("salir")){seguir=false;}
+            }
+        }
+        else
+        {
+           System.out.println("El codigo de producto no es correcto"); 
+        }
+        }
+        
+        return fichaDeCompra;
+    }
+    
+    public void setPagar(FichaDeCompra ficha)
+    {
+        FichaDeCompra fichaDeCompra = ficha;
+        System.out.println("¿Como desea realizar el pago?");
+        System.out.println("1. Efectivo o tarjeta");
+        System.out.println("2. Solicitar financiacion");
+        String orden = Lector.getPalabra();
+
+        switch (orden)
+        {
+            case "1":
+            fichaDeCompra.setEstado("pagado");
+            historialVentas.put(numeroDeFicha,fichaDeCompra);
+            numeroDeFicha=numeroDeFicha+1;
+            break;
+            
+            case "2":
+            System.out.println("Debe ponerse en contacto con un financiero para finalizar la compra");
+            historialVentas.put(numeroDeFicha,fichaDeCompra);
+            numeroDeFicha=numeroDeFicha+1;
+            break;
+            
+            default:
+            System.out.println("La opcion elegida no es valida");
+            setPagar(fichaDeCompra);
+            
+            
+        }
+        
+    }
+    
+    public void imprimeFicha(FichaDeCompra fichaDeCompra)
+    {
+        HashMap<String,Integer> ListaDeProductos = fichaDeCompra.getListaProductos();
+        System.out.println("********************************************************************************************************************************************************************");
+        System.out.println("Ficha de compra numero: "+fichaDeCompra.getNumeroDocumento()+" Cliente: "+fichaDeCompra.getIdCliente()+" Empleado: "+fichaDeCompra.getIdEmpleado()
+        +" Fecha: "+fichaDeCompra.getFecha());
+        ListaDeProductos.forEach((codigoProducto,cantidad)->System.out.println(cantidad+"X "+almacen.getProductoPorCp(codigoProducto).getDescripcionCorta()+" Estado del pago: "+fichaDeCompra.getEstado()) );
+        System.out.println("Total a pagar: "+fichaDeCompra.getTotal()+"€");
+        System.out.println("*******************************************************************************************************************************************************************");
+        System.out.println("*******************************************************************************************************************************************************************");
+    }
+    
+    public HashMap<Integer,FichaDeCompra> getHistorialVentas()
+    {
+        return historialVentas;
+    }
+    
+    public void getHistorialDeVentas()
+    {
+        System.out.println("HISTORIAL DE VENTAS");
+        for(HashMap.Entry<Integer,FichaDeCompra> venta:historialVentas.entrySet())
+        {
+            System.out.println();
+            imprimeFicha(venta.getValue());
+        }
+    }
+    
+    public void getHistorialVentasCliente()
+    {
+        String idCliente = Lector.getPalabra();
+        System.out.println("HISTORIAL DE VENTAS DE "+idCliente);
+        for(HashMap.Entry<Integer,FichaDeCompra> venta:historialVentas.entrySet())
+        {
+            if(venta.getValue().getIdCliente().equals(idCliente)){imprimeFicha(venta.getValue());}
+        }
+    }
+    
+    public FichaDeCompra getFichaPorNumero(int numero)
+    {
+        return historialVentas.get(numero);
+    }
+    
+    public void getFichaNumero(int numero)
+    {
+        imprimeFicha(historialVentas.get(numero));
+    }
+    
+    public void getFichasEstado(String estado)
+    {
+        for(HashMap.Entry<Integer,FichaDeCompra> venta:historialVentas.entrySet())
+        {
+            if(venta.getValue().getEstado().equals(estado))
+            {
+                System.out.println(venta.getValue().getFecha()+" Cliente:"+venta.getValue().getIdCliente()+" numero de ficha:"+venta.getValue().getNumeroDocumento()+"   "
+                +venta.getValue().getEstado());
+            }
+        }
+    }    
+
+    public void getFichasIdCliente(String idCliente)
+    {
+        for(HashMap.Entry<Integer,FichaDeCompra> venta:historialVentas.entrySet())
+        {
+            if(venta.getValue().getIdCliente().equals(idCliente))
+            {
+                System.out.println(venta.getValue().getFecha()+" Cliente:"+venta.getValue().getIdCliente()+" numero de ficha:"+venta.getValue().getNumeroDocumento()+"   "
+                +venta.getValue().getEstado());
+            }
+        }
+    }
+   
+    public void getFichasIdClienteEstado(String idCliente,String estado)
+    {
+        for(HashMap.Entry<Integer,FichaDeCompra> venta:historialVentas.entrySet())
+        {
+            if(venta.getValue().getIdCliente().equals(idCliente))
+            {
+                if(venta.getValue().getEstado().equals(estado))
+                {
+                    System.out.println(venta.getValue().getFecha()+" Cliente:"+venta.getValue().getIdCliente()+" numero de ficha:"+venta.getValue().getNumeroDocumento()+"   "
+                    +venta.getValue().getEstado());
+                }
+            }
+        }
+    }
+    
+    public boolean getExisteFicha(int numeroFicha)
+    {
+       if(historialVentas.get(numeroFicha)==null)
+       {
+           return false;
+       }
+       else
+       {
+           return true;
+       }
+    }
+}

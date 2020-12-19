@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Ordenador
+comment0.text=\r\n\ Define\ las\ caracter\u00EDsticas\ de\ un\ ordenador\r\n\ \r\n\ @author\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\r\n\ @version\ 2018.04.22\r\n
+comment1.params=codigoDeProducto\ marca\ modelo\ color\ precio\ cantidad\ ram\ discoDuro\ procesador\ tarjetaGrafica\ bateria\ tipo
+comment1.target=Ordenador(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ double,\ int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Crea\ productos\ tipo\ ordenador\r\n\ @param\ codigoDeProducto\ n\u00FAmero\ de\ identificaci\u00F3n\ del\ producto\r\n\ @param\ marca\ fabricante\ del\ producto\r\n\ @param\ modelo\ \ \r\n\ @param\ color\r\n\ @param\ precio\r\n\ @param\ cantidad\ cantidad\ de\ productos\ en\ el\ almacen\r\n\ @param\ ram\ memoria\ ram\ del\ sistema\r\n\ @param\ discoDuro\ memoria\ disponible\r\n\ @param\ procesador\ modelo\ de\ procesador\r\n\ @param\ tarjetaGrafica\ modelo\ de\ tarjeta\ grafica\r\n\ @param\ bateria\ tama\u00F1o\ de\ la\ bateria\r\n\ @param\ tipo\ tipo\ de\ ordenador\ (portatil,\ sobremesa,\ servidor...)\ \r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Ofrece\ una\ breve\ descripci\u00F3n\ del\ producto\r\n\ @return\ descripci\u00F3n\ del\ producto\r\n
+numComments=3

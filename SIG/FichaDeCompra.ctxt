@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=FichaDeCompra
+comment0.text=\n\ Almacena\ los\ datos\ relacionados\ con\ una\ compra\n\ \n\ @author\ Iv\u00E1n\ Adrio\ Mu\u00F1iz\n\ @version\ 2018.04.21\n
+comment1.params=idCliente\ idEmpleado\ fecha\ numeroDeFicha
+comment1.target=FichaDeCompra(java.lang.String,\ java.lang.String,\ java.util.Date,\ int)
+comment1.text=\n\ Crea\ la\ ficha\ de\ compra\n\ @param\ idCliente\ DNI\ del\ cliente\n\ @param\ idEmpleado\ DNI\ del\ empleado\ que\ realiza\ la\ venta\n\ @param\ fecha\ fecha\ de\ compra\n\ @param\ numeroDeFicha\ n\u00FAmero\ de\ ficha\ de\ compra\n
+comment2.params=total
+comment2.target=void\ setTotal(double)
+comment2.text=\n\ A\u00F1ade\ el\ valor\ total\ a\ la\ ficha.\ Representa\ el\ precio\ de\ la\ compra\n\ @param\ total\ precio\ de\ la\ compra\n
+comment3.params=
+comment3.target=double\ getTotal()
+comment3.text=\n\ Consulta\ el\ precio\ total\ de\ la\ compra\n\ @return\ precio\ total\ de\ la\ compra\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
